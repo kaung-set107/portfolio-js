@@ -666,6 +666,13 @@ dd {
   text-overflow: ellipsis;
   white-space: nowrap;
  }
+ .top-right {
+  position: absolute;
+  top: 2px;
+  right: 50.5px;
+
+  padding: 60px 90px;
+ }
  .dl-horizontal dd {
   margin-left: 180px;
  }
@@ -5070,7 +5077,9 @@ label {
  text-align: center;
  color: white;
 }
-
+.img-responsive:hover {
+ box-shadow: 1.5px 1.5px rgb(19, 204, 237);
+}
 /* Top right text */
 .top-right {
  position: absolute;
@@ -5131,6 +5140,21 @@ label {
   opacity: 0;
   transition: opacity 0.7s ease;
   border-radius: 60px 0px 0px 0px;
+ }
+ .fot,
+ .lan,
+ .about,
+ .uni {
+  font-size: small;
+  margin-top: 10px;
+ }
+
+ .top-right {
+  top: 1px;
+  right: 50.5px;
+  padding: 65px 85px;
+  opacity: 0;
+  transition: opacity 0.7s ease;
  }
 
  .header-text {
