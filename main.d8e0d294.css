@@ -5211,19 +5211,19 @@ label {
 
 @media (max-width: 400px) {
  .header-text .name::after {
-  height: 120%;
-  width: 99%;
+  /* height: 10%;
+  width: 60%; */
   background-color: #000000;
-  border-left: 2px solid white;
-  animation: typing 2.5s steps(12) infinite;
+  border-left: 1px solid white;
+  animation: typing 2.5s steps(5) infinite;
  }
 
  .fot,
  .lan,
  .about,
- .uni {
+ .juni {
   width: auto;
-  margin-top: 10px;
+  margin-top: 20px;
  }
 
  .header-text {
@@ -5235,12 +5235,16 @@ label {
  }
  .name {
   color: rgb(245, 174, 20);
-  font-size: 20px;
+  font-size: 10px;
 
   font-weight: bolder;
  }
  .juni {
   font-size: smaller;
+ }
+ .hdes {
+  float: left;
+  margin-left: 25px;
  }
  .h {
   font-size: small;
@@ -5255,6 +5259,7 @@ label {
  }
  .head-g {
   float: left;
+  margin-left: 20px;
  }
  .fa-icon {
   width: 2%;
@@ -5262,7 +5267,7 @@ label {
  }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
  .header-text .name::after {
   content: "";
   position: absolute;
