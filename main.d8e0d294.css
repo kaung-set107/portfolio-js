@@ -5287,3 +5287,19 @@ label {
   font-size: small;
  }
 }
+#img-head {
+ display: flex;
+
+ border-radius: 8px;
+}
+
+.img-container {
+ flex: auto;
+
+ border-radius: 4px;
+}
+
+/* extension */
+html.sr .img-container {
+ visibility: hidden;
+}
