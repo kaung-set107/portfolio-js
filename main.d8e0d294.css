@@ -18,6 +18,7 @@ img {
  width: 90%;
  height: 80%;
 }
+
 p {
  font-size: 26px;
 }
@@ -67,6 +68,7 @@ a:active,
 a:hover {
  outline: 0;
 }
+
 abbr[title] {
  border-bottom: 1px dotted;
 }
@@ -4826,9 +4828,9 @@ body.white {
  margin-top: 0;
  margin-bottom: 40px;
 }
-.card .card-block {
- padding: 4rem;
-}
+/* #img-head {
+ margin: auto 200px;
+} */
 @media (min-width: 992px) {
  .card .card-block {
   padding: 6rem;
@@ -5118,13 +5120,13 @@ label {
  color: orange;
  font-size: 50px;
 }
-.header-text .name {
+/* .header-text .name {
  position: relative;
-}
+} */
 .head-g {
  text-align: center;
 }
-.header-text .name::after {
+/* .header-text .name::after {
  content: "";
  position: absolute;
  left: 0;
@@ -5139,7 +5141,7 @@ label {
   left: 100%;
   margin: 0 35px;
  }
-}
+} */
 @media (max-width: 600px) {
  /* Top right text */
 
@@ -5159,7 +5161,7 @@ label {
   font-size: 20px;
  }
  .name {
-  color: rgb(245, 174, 20);
+  color: rgb(244, 172, 15);
   font-size: 20px;
 
   font-weight: bolder;
@@ -5172,10 +5174,10 @@ label {
   font-size: smaller;
  }
 
- .header-text .name {
+ /* .header-text .name {
   position: relative;
- }
- .header-text .name::after {
+ } */
+ /* .header-text .name::after {
   content: "";
   position: absolute;
   left: 0;
@@ -5184,7 +5186,7 @@ label {
   background-color: #000000;
   border-left: 2px solid white;
   animation: typing 2.5s steps(11) infinite;
- }
+ } */
  .fa-icon {
   width: 2px;
   height: 2px;
@@ -5210,12 +5212,14 @@ label {
 }
 
 @media (max-width: 400px) {
- .header-text .name::after {
-  /* height: 10%;
-  width: 60%; */
+ /* .header-text .name::after {
+
   background-color: #000000;
   border-left: 1px solid white;
   animation: typing 2.5s steps(5) infinite;
+ } */
+ .h5 {
+  font-size: small;
  }
 
  .fot,
@@ -5223,9 +5227,14 @@ label {
  .about,
  .juni {
   width: auto;
-  margin-top: 20px;
+  margin: 20px 20px;
+  font-size: smaller;
  }
 
+ .uni {
+  font-size: smaller;
+  margin-left: 10px;
+ }
  .header-text {
   font-size: 20px;
  }
@@ -5235,9 +5244,8 @@ label {
  }
  .name {
   color: rgb(245, 174, 20);
-  font-size: 10px;
-
-  font-weight: bolder;
+  font-size: small;
+  /* font-weight: bolder; */
  }
  .juni {
   font-size: smaller;
@@ -5248,27 +5256,34 @@ label {
  }
  .h {
   font-size: small;
+  margin: auto 10px;
  }
  .h5 {
-  font-size: smaller;
- }
- .skill {
-  width: 2%;
-  height: 2%;
+  font-size: 3px;
   display: inline;
  }
- .head-g {
-  float: left;
-  margin-left: 20px;
+ .skill {
+  width: 5px;
+  height: 5px;
+  display: inline;
+  margin: auto 10px;
  }
- .fa-icon {
+ .reveal-content,
+ #img-head {
+  margin: auto 10px;
+ }
+ .shop {
+  max-width: 50%;
+ }
+
+ /* .fa-icon {
   width: 2%;
   height: 2%;
- }
+ } */
 }
 
-@media (max-width: 1000px) {
- .header-text .name::after {
+@media (max-width: 900px) {
+ /* .header-text .name::after {
   content: "";
   position: absolute;
   left: 0;
@@ -5277,7 +5292,7 @@ label {
   background-color: #000000;
   border-left: 2px solid white;
   animation: typing 2.5s steps(11) infinite;
- }
+ } */
  .im {
   color: #f9f2f4;
   font-size: medium;
@@ -5292,6 +5307,7 @@ label {
   font-size: small;
  }
 }
+
 #img-head {
  display: flex;
 
@@ -5306,5 +5322,31 @@ label {
 
 /* extension */
 html.sr .img-container {
+ visibility: hidden;
+}
+
+/*for name */
+#name {
+ display: flex;
+ list-style: none;
+ margin: 0;
+ padding: 0;
+
+ border-radius: 8px;
+}
+
+.n-list {
+ width: 15%;
+ height: 50px;
+ flex: auto;
+ margin: 0.5rem;
+ background: rgb(0, 0, 0);
+ line-height: 50px;
+ text-align: center;
+ border-radius: 4px;
+}
+
+/* extension */
+html.sr .n-list {
  visibility: hidden;
 }
